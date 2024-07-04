@@ -4,6 +4,8 @@ import {checkIsLoadingStoreRacesList, getStoreRacesList} from "../services/races
 import {DEFAULT_STATES, NULLABLE_STATES, TABLE_ROW_HEADER} from "../utils/mock/calculator_mocks.ts";
 import {RussianStateNames, StateNames, TableRowsNames} from "../utils/enums/calculator-enums.ts";
 import {
+  ALLOW_MAX_STATE_VALUE,
+  ALLOW_MIN_STATE_VALUE,
   DIFFERENCE_BETWEEN_USED_COUNTS,
   MAX_DISTRRIBUTION_POINTS, MAX_STATE_VALUE,
   NULL_STATE_VALUE
@@ -133,8 +135,8 @@ watch(tableRows, (count) => {
                          inputId="minmax-buttons"
                          showButtons
                          buttonLayout="horizontal"
-                         :min="-5"
-                         :max="totalPointsToUse <= 0 ? slotProps.data[col.field] : MAX_STATE_VALUE"
+                         :min="ALLOW_MIN_STATE_VALUE"
+                         :max="totalPointsToUse <= 0 && calculatedTotalCounts[col.field] <= ALLOW_MAX_STATE_VALUE ? slotProps.data[col.field] : MAX_STATE_VALUE"
                          :step="1"
                          >
             </InputNumber>
