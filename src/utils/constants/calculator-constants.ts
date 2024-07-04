@@ -1,5 +1,7 @@
 // STATES
 
+export const NULL_STATE_VALUE = 0
+
 export const MIN_STATE_VALUE = -2
 
 export const ALLOW_MIN_STATE_VALUE = -5
@@ -8,8 +10,10 @@ export const MAX_STATE_VALUE = 5
 
 export const ALLOW_MAX_STATE_VALUE = 10
 
-const DEFAULT_STATE_VALUE = MIN_STATE_VALUE
+export const DEFAULT_STATE_VALUE = MIN_STATE_VALUE
 
 // DISTRIBUTION POINTS
 
 export const MAX_DISTRRIBUTION_POINTS = 15
+
+export const DIFFERENCE_BETWEEN_USED_COUNTS = 3
