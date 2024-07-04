@@ -134,7 +134,7 @@ watch(tableRows, (count) => {
                          showButtons
                          buttonLayout="horizontal"
                          :min="-5"
-                         :max="totalPointsToUse <= 0 ? slotProps.data[col.field] : MAX_STATE_VALUE "
+                         :max="totalPointsToUse <= 0 ? slotProps.data[col.field] : MAX_STATE_VALUE"
                          :step="1"
                          >
             </InputNumber>
