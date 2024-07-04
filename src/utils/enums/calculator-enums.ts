@@ -1,6 +1,6 @@
 export enum StateNames {
     STRENGTH = "strength",
-    AGILITY = "agily",
+    AGILITY = "agility",
     PHYSIQUE = "physique",
     INTELLIGENCE = "intelligence",
     WISDOM = "wisdom",
@@ -23,4 +23,11 @@ export enum RussianShortStateNames {
     INTELLIGENCE = "инт",
     WISDOM = "муд",
     CHARISMA = "хар",
+}
+
+export enum TableRowsNames {
+    HEADER = "Характеристика",
+    RACE_BONUS = "Бонус расы / подрасы",
+    MODIFICATOR = "Значение",
+    TOTAL_COUNTS = "Итого",
 }
