@@ -14,6 +14,7 @@ import Button from "primevue/button";
 import Message from "primevue/message";
 import AutoComplete from 'primevue/autocomplete';
 import { createPinia } from "pinia";
+import 'primeicons/primeicons.css';
 
 const pinia = createPinia()
 const app = createApp(App)
