@@ -31,3 +31,10 @@ export enum TableRowsNames {
     MODIFICATOR = "Значение",
     TOTAL_COUNTS = "Итого",
 }
+
+export enum WindowSize {
+    Small = 'small',
+    Medium = 'medium',
+    Normal = 'normal',
+    Large = 'large',
+}
